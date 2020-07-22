@@ -19,6 +19,4 @@ public class ColorPoint extends Point {
 			", color=" + color + 
 			"]을 그렸습니다.");
 	}
-	
-	
 }

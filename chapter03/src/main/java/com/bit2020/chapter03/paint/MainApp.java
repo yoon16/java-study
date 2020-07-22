@@ -9,8 +9,10 @@ public class MainApp {
 		
 		Point point2 = new Point(50, 50);
 		
-		drawPoint(point1);
-		drawPoint(point2);
+		//drawPoint(point1);
+		draw(point1);
+		//drawPoint(point2);
+		draw(point2);
 
 		point1.show(false);
 		
@@ -21,30 +23,40 @@ public class MainApp {
 		point3.setY(100);
 		((ColorPoint)point3).setColor("red");
 		
-		drawPoint(point3);
+		//drawPoint(point3);
+		draw(point3);
 		
 		System.out.println("//================================");
 		Rect rect = new Rect();
-		drawShape(rect);
+		//drawShape(rect);
+		draw(rect);
 		
 		System.out.println("//================================");
 		Triangle triangle = new Triangle();
-		drawShape(triangle);
+		//drawShape(triangle);
+		draw(triangle);
 
 		System.out.println("//================================");
 		Circle circle = new Circle();
-		drawShape(circle);
-		
+		//drawShape(circle);
+		draw(circle);
+
+		System.out.println("//================================");
+		draw(new GraphicText("Hello"));
 	}
 
-	public static void drawPoint(Point pt) {
-		//pt.show(true);
-		pt.show();
+	public static void draw(Drawable drawable) {
+		drawable.draw();
 	}
-
-	public static void drawShape(Shape shape) {
-		shape.draw();
-	}
+	
+//	public static void drawPoint(Point pt) {
+//		//pt.show(true);
+//		pt.show();
+//	}
+//	public static void drawShape(Shape shape) {
+//		shape.draw();
+//	}
+	
 //	public static void drawRect(Rect rect) {
 //		rect.draw();
 //	}
