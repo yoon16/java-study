@@ -1,8 +1,23 @@
 package practice01;
 
-public class Prob04 {
+import java.util.Scanner;
 
+public class Prob04 {
 	public static void main(String[] args) {
-		/* 코드를 작성합니다. */
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("문자열을 입력하세요 : ");
+		String text = scanner.nextLine();
+
+		int length = text.length();
+		for( int i = 0; i < length; i++ ) {
+			for( int j = 0; j <= i; j++ ) {
+				System.out.print( text.charAt( j ) );
+			}
+			
+			System.out.println( "" );
+		}
+		
+		scanner.close();
 	}
 }
