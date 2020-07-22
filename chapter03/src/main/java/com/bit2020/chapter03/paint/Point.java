@@ -1,4 +1,4 @@
-package com.bit2020.paint;
+package com.bit2020.chapter03.paint;
 
 public class Point {
 	private int x;
@@ -27,5 +27,14 @@ public class Point {
 
 	public void show() {
 		System.out.println("점[x=" + x + ",y=" + y + "]을 그렸습니다.");
+		//some codes...
+	}
+	
+	public void show(boolean visible) {
+		if(visible) {
+			show();
+		} else {
+			System.out.println("점[x=" + x + ",y=" + y + "]을 지웠습니다.");
+		}
 	}
 }
