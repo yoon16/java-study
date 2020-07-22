@@ -15,10 +15,14 @@ public class Prob03 {
 	}
 	
 	public static void replaceSpace( char[] c ) {
-		/* 코드를 작성합니다. */
+		for( int i = 0; i < c.length; i++ ) {
+			if( c [ i ] == ' ' ) {
+				c[ i ] = ',';
+			}
+		}
 	}
 	
 	public static void printCharArray( char[] c ) {
-		/* 코드를 작성합니다. */
+		System.out.println( c );
 	}
 }
