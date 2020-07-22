@@ -46,6 +46,28 @@ public class MainApp {
 
 		System.out.println("//================================");
 		draw(new GraphicText("Hello"));
+				
+		System.out.println("//============ instanceof 연산자1 ================");
+		System.out.println(circle instanceof Circle);
+		System.out.println(circle instanceof Shape);
+		System.out.println(circle instanceof Object);
+		System.out.println(circle instanceof Drawable);
+		//오류: 타입이 class 레퍼런스 변수인 경우 
+		//     Hierachy 구조에서 상위, 하위 클래스만 instanceof 연산자를 사용 할 수 있다.
+		//System.out.println(circle instanceof Rect);
+		
+		System.out.println("//============ instanceof 연산자2 ================");
+		Shape s = new Circle();
+		System.out.println(s instanceof Circle);
+		System.out.println(s instanceof Triangle);
+		System.out.println(s instanceof Shape);
+		System.out.println(s instanceof Object);
+		
+		System.out.println("//============ instanceof 연산자3 ================");
+		// Interface 구현 여부를 확인할 경우  Hierachy 구조 상관없이 instanceof 연산자를 사용할 수 있다.
+		System.out.println(s instanceof Drawable);
+		System.out.println(s instanceof Runnable);
+		
 	}
 
 	public static void draw(Drawable drawable) {
