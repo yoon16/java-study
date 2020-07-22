@@ -14,7 +14,7 @@ public class MainApp {
 
 		point1.show(false);
 		
-		System.out.println("============================");
+		System.out.println("//================================");
 
 		Point point3 = new ColorPoint();
 		point3.setX(30);
@@ -22,10 +22,34 @@ public class MainApp {
 		((ColorPoint)point3).setColor("red");
 		
 		drawPoint(point3);
+		
+		System.out.println("//================================");
+		Rect rect = new Rect();
+		drawShape(rect);
+		
+		System.out.println("//================================");
+		Triangle triangle = new Triangle();
+		drawShape(triangle);
+
+		System.out.println("//================================");
+		Circle circle = new Circle();
+		drawShape(circle);
+		
 	}
 
 	public static void drawPoint(Point pt) {
 		//pt.show(true);
 		pt.show();
 	}
+
+	public static void drawShape(Shape shape) {
+		shape.draw();
+	}
+//	public static void drawRect(Rect rect) {
+//		rect.draw();
+//	}
+//	public static void drawTriangle(Triangle triangle) {
+//		triangle.draw();
+//	}
+	
 }
