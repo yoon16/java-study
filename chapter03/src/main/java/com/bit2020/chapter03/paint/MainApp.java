@@ -26,6 +26,9 @@ public class MainApp {
 		//drawPoint(point3);
 		draw(point3);
 		
+		Point point4 = new ColorPoint(10, 20, "yellow");
+		draw(point4);
+		
 		System.out.println("//================================");
 		Rect rect = new Rect();
 		//drawShape(rect);
