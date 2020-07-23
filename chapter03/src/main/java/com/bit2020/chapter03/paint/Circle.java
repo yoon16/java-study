@@ -10,4 +10,8 @@ public class Circle extends Shape {
 		System.out.println("원을 그렸습니다.");
 	}
 
+	@Override
+	public int calcPerimeter() {
+		return (int)(radius*2*Math.PI);
+	}
 }
