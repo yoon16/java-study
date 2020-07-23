@@ -20,6 +20,7 @@ public class Goods {
 	
 	public Goods(String name, int price) {
 		this();
+		System.out.println("!!");
 		this.name = name;
 		this.price = price;
 	}
