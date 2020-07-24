@@ -19,7 +19,6 @@ public class ObjectTest04 {
 		System.out.println(s3.equals(s4));
 		System.out.println(s3.hashCode() + ":" + s4.hashCode());
 		System.out.println(System.identityHashCode(s3) + ":" + System.identityHashCode(s4));
-		
-	}
 
+	}
 }
